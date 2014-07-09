@@ -1,0 +1,136 @@
+<?php	
+	require 'fb/facebook.php';
+	require 'engine/Mobile_Detect.php';
+	$detect = new Mobile_Detect;
+	
+	if(isset($_GET['ref'])){
+		if($detect->isMobile()){
+			define("REF", "mobile-".$_GET['ref']);
+		}else{
+			define("REF", $_GET['ref']);
+		}
+	}else{
+		$url = "$_SERVER[HTTP_REFERER]";
+		function get_domain($url){
+			$pieces = parse_url($url);
+			$domain = isset($pieces['host']) ? $pieces['host'] : '';
+			if (preg_match('/(?P<domain>[a-z0-9][a-z0-9\-]{1,63}\.[a-z\.]{2,6})$/i', $domain, $regs)) {
+				return $regs['domain'];
+			}
+			return false;
+		}
+		
+		if(get_domain($url) == '')
+			define("REF", 'sito');
+		else
+			define("REF", get_domain($url)); 	
+	}
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta http-equiv="Cache-control" content="public">	
+
+	<title>Concorso Tre Cose In Valigia di Turista Curioso</title>
+	<meta name="description" content="Il miglior viaggio al prezzo più basso, i voli più economici e le offerte negli hotel più incredibili! - www.turistacurioso.it Non ci credi ancora che possiamo trovarti il miglior viaggio al prezzo più basso, i voli più economici e le offerte negli hotel più incredibili? Ti presentiamo IL TURISTA CURIOSO, che curioserà e troverà per conto tuo i viaggi da non perdere, i maggiori sconti e le offerte più incredibili su voli, negli hotel, in crociera, per i tuoi weekend, nelle spa, in montagna, per i tuoi viaggi avventurosi ed i grandi viaggi. Tutto quello che puoi immaginare e… l’inimmaginabile direttamente dalla lente del nostro curiosone." />
+	<meta name="keywords" content="Turista curioso, voli,  hotel, crociera, weekend, spa, montagna, viaggi avventurosi, grandi viaggi,voli economici, sconti" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+
+	<link href="css/style.css" rel="stylesheet" media="all">
+
+</head>
+<?php flush(); ?>
+<body>
+	<div id="logo"  class="superior"></div>
+	
+	<div id="central_title" class="superior"></div>
+	<div id="right_title" class="superior"></div>
+	
+	<div id="londra" class="menu"><div class="overlay"></div><div class="select"></div></div>
+	<div id="newyork" class="menu"><div class="overlay"></div><div class="select"></div></div>
+	<div id="messico" class="menu"><div class="overlay"></div><div class="select"></div></div>
+	<div id="mykonos" class="menu"><div class="overlay"></div><div class="select"></div></div>
+	
+	<form>
+		<div id="form"> 
+			<div class="box1">
+				<div></div>
+				<div>
+					<p class="left" onclick="change_dest('left')"></p>
+					CAMBIA LA TUA SCELTA
+					<p class="right" onclick="change_dest('right')"></p>
+				</div>
+				<div> 
+				</div>
+			</div>
+			<div class="box2">
+				PASSO <span>2</span>
+				<div id="passo"></div>
+				<div id="adsense">
+					<img src="http://img.webnation.it/concorso_turista_curioso/loader_ad.gif" />
+				</div>
+			</div>	
+			<div class="box3">
+				<div class="top">
+					PARTI <span class="white">CON TURISTA</span>
+					<?php include ("fb/button_fb.php"); ?>
+					<input type="text" name="nome" placeholder="Nome *" class="icon_a">
+					<input type="text" name="cognome" placeholder="Cognome *" class="icon_a">
+					<input type="text" name="email" placeholder="Email *" class="icon_b">
+					<label class="nb">* campi obbligatori</label>
+					<div class="clear"></div>
+				</div>
+				<div class="bottom">
+					<div class="privacy_button">
+						<input type="radio" name="privacya" value="si"> Si
+						<input type="radio" name="privacya" value="no"> No
+					</div>
+					<div class="privacy_txt">
+					Desidero partecipare al concorso di cui ho acquisito e accetto integralmente <a href="regolamento_inviaggio_col_turista.pdf" target="_blank">il regolamento</a>. Richiedo contestualmente l’iscrizione ai servizi di postadiretta.it dando il consenso ai trattamento per finalità di Tipo B, descritte <a href="http://www.turistacurioso.it/landingmachines/terminos.html" target="_blank">nell’informativa privacy</a> che ho acquisito, in quanto condizione necessaria per la partecipazione. 
+					</div>
+					<div class="clear"></div>
+					<div id="step">
+						<img src="http://img.webnation.it/concorso_turista_curioso/ajax-loader.gif" id="loader_gif" alt="caricamento, attendi qualche secondo" title="caricamento, attendi qualche secondo" />
+						PROSSIMO PASSO
+					</div>
+				</div>
+			</div>	
+		</div>
+		<input type="hidden" id="position" value="a">
+		<input type="hidden" id="selection" value="">
+		<input type="hidden" id="ref" value="<?php echo REF; ?>">
+		<input type="hidden" id="mail_temp">
+		<input type="hidden" id="nome_temp">
+		<input type="hidden" id="cognome_temp">
+		<input type="hidden" id="sesso_fb">
+		<input type="hidden" id="datanascita_fb">
+	</form>
+	
+	<div id="footer">
+		<div id="copy"> 
+			Copyright &copy; 2006-2014 Antevenio S.r.l. Tutti i diritti sono riservati. Realizzato da Antevenio S.r.l. Viale Francesco Restelli 3/7 - 20124 Milano Partita IVA n. IT0421826096 
+		</div>
+		<div id="facebook" onclick="condividiHome()">
+			Condividi su Facebook
+		</div>
+	</div>	
+	
+	<!-- FACEBOOK API ELEMENT -->
+	<div id="fb-root"></div>
+	
+	
+	<div id="adsense_mobile_fisso">
+		<iframe src='addsense/passo_fine_footer_mob.html' frameborder='0'></iframe>
+	</div>	
+	
+	<script src="js/jquery.min.js"></script>
+	<script async src="js/script.js"></script>
+	<script async src="js/jquery.selectbox-0.2.min.js"></script>	
+	<link href="css/jquery.selectbox.min.css" rel="stylesheet" media="all">
+	<link href='http://fonts.googleapis.com/css?family=Roboto:100,300' rel='stylesheet' type='text/css'>		
+</body>
+</html>

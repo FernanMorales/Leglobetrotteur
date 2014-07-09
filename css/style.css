@@ -1,0 +1,942 @@
+
+@font-face{
+    font-family: 'VeveyRegular';
+    src: url('../font/vevey-webfont.eot');
+    src: url('../font/vevey-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/vevey-webfont.woff') format('woff'),
+         url('../font/vevey-webfont.ttf') format('truetype'),
+         url('../font/vevey-webfont.svg#VeveyRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+} 
+
+/* risoluzioni medie */
+@media all and (min-width: 641px) and (max-width: 1200px) {
+	div.box1{
+		display:none !important
+	}
+	
+	div#form{
+		width: 782px !important
+	}
+	
+}
+
+/**************************************/
+/**************************************/
+/*       SOLO PER UTENTI MOBILE       */
+/**************************************/
+/**************************************/
+@media all and (max-width: 640px) {
+	body, html {
+	  height: 80% !important;
+	}
+	
+	body{
+		padding-top: 25% !important;
+		overflow-y: auto !important;
+		background-color: #282b37 !important;
+	}
+	
+	div#logo{
+		background-image: url("http://www.leglobetrotteur.fr/landings/concorso_turista_curioso/logo_turista_curioso_mob.png") !important;
+		top: 4% !important;
+		width: 25% !important;
+		left: 1% !important;
+		max-height: 22vw !important;
+	}
+	div#central_title{
+		background-image: url("http://www.leglobetrotteur.fr/landings/concorso_turista_curioso/logo_mobile.png") !important;
+		top: 2% !important;
+		height: 31vw !important;
+		width:50% !important;
+		background-size: 100% !important;
+		left: 28% !important;
+	}	
+	
+	div#londra{
+		background-image: url("http://www.leglobetrotteur.fr/landings/concorso_turista_curioso/londra_select.jpg") !important;
+	}
+
+	div#newyork{
+		background-image: url("http://www.leglobetrotteur.fr/landings/concorso_turista_curioso/newyork_select.jpg") !important;
+	}
+
+	div#messico{
+		background-image: url("http://www.leglobetrotteur.fr/landings/concorso_turista_curioso/messico_select.jpg") !important;
+	}
+
+	div#mykonos{
+		background-image: url("http://www.leglobetrotteur.fr/landings/concorso_turista_curioso/mykonos_select.jpg") !important;
+	}
+	
+	
+	div.menu{
+		width: 50% !important;
+		height: 40vw !important;
+		background-repeat: no-repeat !important;
+		background-size: 100% !important;
+		margin-top:-1vh !important;
+	}
+	
+	/*.menu div{
+		margin-top:4vw !important;
+		height: 36vw !important;
+		background-size: 26vw !important;
+	}*/
+	div.select{
+		margin-top:4vw !important;
+		height: 36vw !important;
+		background-size: 26vw !important;	
+	}
+	
+	div#footer{
+		position: static !important;
+		text-align: center !important;
+		margin: 22px !important;
+		font-size: 11px !important;
+		letter-spacing: -1px !important;
+		line-height: 20px !important;
+		font-weight:300 !important;
+		width: 90% !important;
+		padding-top:20px !important;
+	}
+	
+	div#facebook{
+		background-image: url("http://img.webnation.it/concorso_turista_curioso/fb.png") !important;
+		border: none !important;
+		float: right !important;
+		width: 41px !important;
+		height: 41px !important;
+		padding-right: 0 !important;
+		padding-top: 0 !important;
+		position: absolute !important;
+		top: 8vw !important;
+		right: 2% !important;
+		color: transparent !important;
+		background-color: transparent !important
+	}
+	
+	.box1, .box2, .overlay{
+		display:none;
+	}
+	
+	div#right_title{
+		display:none !important;
+	}
+	
+	div#facebook{
+		background-position: 0 0 !important;
+	}
+	
+	div#facebook-login{
+	    margin: 0 auto;
+		padding-left: 15%;
+		width: 79%;	
+	}
+	
+	div#adsense_mobile_fisso{
+		display:block !important;
+	}
+	
+	div#copy{
+		padding-bottom: 65px !important;
+	}
+	
+	input#comune{
+		margin-left:2% !important;
+		width: 50% !important;
+	}
+	
+	select#comune{
+		margin-left:2% !important;
+		width: 50% !important;	
+	}
+}
+
+/**************************************/
+/**************************************/
+/*     SOLO PER UTENTI DESKTOP/PC     */
+/**************************************/
+/**************************************/
+@media all and (min-width: 640px){
+	/*div.menu:hover{
+		background-position: -400px 0;
+	}*/
+}
+
+/**************************************/
+/**************************************/
+/*              PER TUTTI             */
+/**************************************/
+/**************************************/
+* {
+margin: 0;
+padding: 0;
+}
+
+body, html {
+	height: 100%;
+}
+
+body{
+	/*margin: 0 auto;
+	text-align: center;*/
+	overflow-x:hidden;
+	background: #333;
+}
+
+.superior{
+	z-index:500;
+}
+
+div.menu{
+	width:25%;
+	height:100vh;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	text-align:center;
+	background-position: 0 0;
+	background-size:200vh;
+	display:inline-block;	
+	margin-right:-4px;
+}
+
+div#newyork .overlay, div#londra .overlay, div#mykonos .overlay, div#messico .overlay{
+	background-position: 0 112vh; 
+	width: 100%;
+	height: 100%;
+	background-size:200vh;
+}
+
+div#newyork, div#newyork .overlay{
+	background-image: url("http://www.leglobetrotteur.fr/landings/concorso_turista_curioso/newyork.jpg");
+}
+
+div#newyork .select, div#londra .select, div#mykonos .select, div#messico .select{
+	width: 100%;
+	background-position:center center;
+	background-repeat: no-repeat;
+	z-index:1000 !important;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+	filter: alpha(opacity=50);
+	opacity:50;
+}
+
+div#newyork .select{
+	background-image: url("http://www.leglobetrotteur.fr/landings/concorso_turista_curioso/parti_newyork.png");
+	background-size:14vw;
+	margin-top:-50vh;
+	height: 14vw;
+}
+
+div#londra, div#londra .overlay{
+	background-image: url("http://www.leglobetrotteur.fr/landings/concorso_turista_curioso/londra.jpg");
+}
+
+
+div#londra .select{
+	background-image: url("http://www.leglobetrotteur.fr/landings/concorso_turista_curioso/parti_londra.png");
+	background-size:14vw;
+	margin-top:-50vh;
+	height: 14vw;
+}
+
+div#mykonos, div#mykonos .overlay{
+	background-image: url("http://www.leglobetrotteur.fr/landings/concorso_turista_curioso/mykonos.jpg");
+}
+
+div#mykonos .select{
+	background-image: url("http://www.leglobetrotteur.fr/landings/concorso_turista_curioso/parti_mykonos.png");
+	background-size:14vw;
+	margin-top:-50vh;
+	height: 14vw;
+}
+
+div#messico, div#messico .overlay{
+	background-image: url("http://www.leglobetrotteur.fr/landings/concorso_turista_curioso/messico.jpg");
+}
+
+div#messico .select{
+	background-image: url("http://www.leglobetrotteur.fr/landings/concorso_turista_curioso/parti_messico.png");
+	background-size:14vw;
+	margin-top:-50vh;
+	height: 14vw;	
+}
+
+
+div#logo{
+	position: absolute;
+	background-image: url("http://www.leglobetrotteur.fr/landings/concorso_turista_curioso/logo_turista_curioso.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	width:20%;
+	height:82%;
+	max-width:264px;
+	max-height:150px;
+	min-width: 26.4px;
+	min-height: 10px;
+	left:3%;
+	top:3%;
+}
+
+div#right_title{
+	position: absolute;
+	background-image: url("http://www.leglobetrotteur.fr/landings/concorso_turista_curioso/titolo.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	width:13vw;
+	height:9vw;
+	min-width: 60.6px;
+	min-height: 100px;
+	right: 3%;
+	top:3%;
+}
+
+div#central_title {
+    background-image: url("http://www.leglobetrotteur.fr/landings/concorso_turista_curioso/scegli.png");
+    background-repeat: no-repeat;
+    background-size: 25vw auto;
+    height: 11vw;
+    left: 38%;
+    position: absolute;
+    top: 3%;
+    width: 25vw;
+}
+
+div#footer{
+	width: 96%;
+	left:2%;
+	right:2%;
+	position: absolute;
+	bottom: 10px;
+	text-align:center;
+	padding-top:10px;
+	font-family: 'Roboto', sans-serif;
+	color: #e3e3e3;
+	border-top: 1px solid #e3e3e3;
+	text-align: left;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+div#copy{
+	float:left;
+}
+
+div#facebook{
+    border: 1px solid #e3e3e3;
+    float: right;
+    height: 21px;
+    padding-right: 10px;
+    padding-top: 5px;
+    text-align: right;
+    width: 172px;
+	cursor:pointer;
+	background-image: url("http://img.webnation.it/concorso_turista_curioso/fb_icon_footer.png");
+	background-repeat:no-repeat;
+	background-position:10px 3px;
+}
+
+div#form{
+	display:none;
+	/*text-align:center;
+	margin-top:10vw;
+	margin-left:18vw;*/
+	
+	margin: 0 auto;
+    padding-top: 18vh;
+    text-align: center;
+    width: 1203px;	
+	
+}
+
+div#form .box1{
+	float:left;
+	width:381px;
+	text-align:center;
+	margin:0 auto;
+	/*padding-left:20px;
+	padding-right:20px;*/
+	margin-top:35px;
+}
+
+.box1 div:first-child{
+	width:100%;
+	height:300px;
+	text-align:center;
+	background-image:url('http://www.leglobetrotteur.fr/landings/concorso_turista_curioso/white.png');
+	border-top:1px solid #e6e6e6;
+	border-left:1px solid #e6e6e6
+}
+
+.box1 div:first-child img{
+	max-width:80%;
+	max-height:80%;
+	margin-top:10%
+}
+
+.box1 div:first-child + div{
+	width:100%;
+	height:55px;
+	background-image:url('http://www.leglobetrotteur.fr/landings/concorso_turista_curioso/arrow.png');
+	background-repeat:no-repeat;
+	font-family:VeveyRegular;
+	color:#fff;
+	font-size:26px;
+	letter-spacing:2px;
+	background-color:#282830;
+	text-align:center;
+	background-position:center;
+	line-height:56px
+}
+
+.box1 div:first-child + div + div{
+	text-align:left;
+	background-image:url('http://www.leglobetrotteur.fr/landings/concorso_turista_curioso/3c3e4b.png');
+	font-family: 'Roboto', sans-serif;
+	color:#fff;
+	font-size:12px;
+	font-weight:300; 
+	letter-spacing: 1px;
+	line-height: 16px; 
+	padding:31px
+}
+
+p.left{
+	cursor:pointer;
+	width:37px;
+	height:54px;
+	float:left;
+	margin-left:12px
+}
+
+p.right{
+	cursor:pointer;
+	width:37px;
+	height:54px;
+	float:right;
+	margin-right:12px
+}
+
+div#form .box2{
+	float:left;
+	font-family: 'Roboto', sans-serif;
+	color:#ffcd05;
+	font-weight:100;
+	font-style:italic;
+	font-size:30px;
+	letter-spacing:4px;
+	margin-top:120px;
+	margin-left:40px;
+	text-shadow: 0px 1px 1px rgba(0,0,0,1);
+}
+
+.box2 span{
+	font-weight:500;
+}
+
+.box2 div#passo{
+	margin-top:23px;
+	width:301px;
+	height: 47px;
+	background-image: url("http://www.leglobetrotteur.fr/landings/concorso_turista_curioso/passo_sprite.png");
+	background-repeat: no-repeat;
+	background-position: 39px 5px;
+	-webkit-transition: background-image 0.2s ease-in-out;
+	-moz-transition: background-image 0.2s ease-in-out;
+	-ms-transition: background-image 0.2s ease-in-out;
+	-o-transition: background-image 0.2s ease-in-out;
+	transition: background-image 0.2s ease-in-out;
+}
+
+.box2 div#adsense{
+	width: 301px;
+	height: 251px;
+	background-color: #fff;
+	margin-top:30px;
+}
+
+#adsense_mobile_fisso{
+	position:fixed;
+	bottom:0;
+	z-index:999999999999 !important;
+	display:none
+}
+
+#adsense_mobile_fisso iframe{
+	height: 66px; 
+	width: 330px; 
+	margin-bottom:-11px; 
+	margin-left:-7px
+}
+
+#adsense iframe, #adsense2 iframe{
+    height: 266px;
+    margin-left: -7px;
+    margin-top: -7px;
+    width: 325px;
+}
+
+#adsense img{
+	margin-top:99px
+}
+
+#dob{
+    font-family: VeveyRegular;
+    color: #fff;
+    font-size: 26px;
+    letter-spacing: 2px;
+    text-align: left;
+    line-height: 56px;
+}
+
+.box2 div#adsense2 {
+    /*background-color: #373941;*/
+	background-color: #fff;
+    height: 251px;
+    margin-top: 30px;
+    width: 301px;
+	margin-left: 30px;
+	float:left;
+}
+
+div#form .box3{
+	float:left;
+	font-family:VeveyRegular;
+	color:#ffcd05;
+	font-weight:100;
+	font-size:40px;
+	letter-spacing:2px;
+	margin-left:40px;
+	width:401px;
+        margin-top:35px;
+	text-align:center;
+}
+
+div.top{
+	background-image: url("http://www.leglobetrotteur.fr/landings/concorso_turista_curioso/white.png");
+    border-left: 1px solid #E6E6E6;
+    border-top: 1px solid #E6E6E6;
+	padding-top:30px;
+}
+
+.box3 div span.white{
+	color:#fff;
+}
+
+div#facebook-login, div#facebook-inv, div#facebook-cond, div.cinquanta, div.inviaRichiestaAmici{
+	font-family: 'Roboto', sans-serif;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	background-color: #3c5a99;
+	letter-spacing:1px;
+	background-image: url("http://www.leglobetrotteur.fr/landings/concorso_turista_curioso/fb_icon.png");
+	background-position:left;
+	background-repeat: no-repeat;
+	color:#fff;
+	line-height:50px;
+	cursor:pointer;
+
+}
+
+div#facebook-login{
+	font-size: 15px;
+	height: 53px;
+	padding-left:70px;
+	width: 250px;
+	margin-left:40px;
+}
+	
+div#facebook-inv, div#facebook-cond, div.cinquanta, div.inviaRichiestaAmici{
+	float:left;
+	font-size: 16px;
+	height:51px;
+	padding-left: 60px;
+	width: 230px;
+	margin-left: 17px;
+	font-style:normal;
+	text-align:center;
+}
+
+div#facebook-login span.bold{
+	font-weight:500;
+}
+
+
+input.icon_a, input.icon_b{
+	font-size:20px; 
+	font-family: 'Roboto', sans-serif;
+    border: none;
+    color: #fff;
+	background-color:#3d414d;
+    padding: 10px;
+    width: 300px;
+	-webkit-border-radius: 3px; 
+	-moz-border-radius: 3px; 
+	border-radius: 3px;	
+	background-repeat:no-repeat;
+	background-position:96% 12px;
+}
+
+input.icon_a{
+	background-image: url("http://www.leglobetrotteur.fr/landings/concorso_turista_curioso/icon1.png");
+}
+
+input.icon_b{	
+	background-image: url("http://www.leglobetrotteur.fr/landings/concorso_turista_curioso/icon2.png");
+}
+
+label.nb{
+	color:#FFF;
+	font-family: 'Roboto', sans-serif;
+	font-size:10px;
+	float:right;
+	letter-spacing:0.5px;
+	margin-right:40px;
+	margin-top:5px;
+	margin-bottom:5px;
+	padding: 3px 7px;
+	font-weight:300;
+    background-color: #3D414D;
+	-webkit-border-radius: 3px; 
+	-moz-border-radius: 3px; 
+	border-radius: 3px;	
+}
+
+div.bottom{
+	clear:both;
+	text-align:right;
+	background-image:url('http://www.leglobetrotteur.fr/landings/concorso_turista_curioso/3c3e4b.png');
+	font-family: 'Roboto', sans-serif;
+	color:#fff;
+	font-size:12px;
+	font-weight:300; 
+	letter-spacing: 1px;
+	line-height: 23px; 
+	padding:31px;
+
+}
+
+div.privacy_button{
+	float:left;
+	color:#edc950;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+div.privacy_txt{
+    float: right;
+    font-size: 10px;
+    line-height: 14px;
+    text-align: left;
+    width: 320px;
+}
+
+div.privacy_txt a{
+	text-decoration:none;
+	color:#edc950;
+}
+
+div#step{
+	-webkit-border-radius: 3px; 
+	-moz-border-radius: 3px; 
+	border-radius: 3px;	
+	background-color: #ffcd05;
+	color:#fff;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	/*text-shadow: 1px 1px 2px #464646;
+	filter:DropShadow(Color=#464646, OffX=1, OffY=1);*/
+	text-align:center;
+	font-size:20px;
+	line-height:45px;
+	margin-top:20px;
+	cursor:pointer
+}
+
+img.turista_perfetto{
+	margin-top: -62px;
+}
+
+div.tre_oggetti{
+    background-color: #3D414D;
+    color: #FFFFFF;
+    font-family: 'Roboto',sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin: 0 auto 10px;
+    padding: 16px;
+    text-align: left;
+    width: 308px;
+	-webkit-border-radius: 3px; 
+	-moz-border-radius: 3px; 
+	border-radius: 3px;	
+}
+
+div.tre_oggetti span{
+    font-weight: 500;
+}
+
+textarea.frase{
+	font-size:20px; 
+	font-family: 'Roboto', sans-serif;
+    border: none;
+    color: #fff;
+	background-color:#3d414d;
+    padding: 10px;
+    width: 320px;
+	height: 500px;
+	-webkit-border-radius: 3px; 
+	-moz-border-radius: 3px; 
+	border-radius: 3px;	
+	height: 200px;
+	resize: none;
+}
+
+select#gg{
+    margin-left: 30px;
+    width: 106px;
+	float:left;
+}
+
+select#mm{
+    margin-left: 10px;
+    width: 106px;
+	float: left
+}
+
+select#aaaa{
+    margin-left: 10px;
+    width: 106px;
+	float: left
+}
+
+select#sesso{
+    margin-left: 30px;
+    width: 338px;
+	float:left;
+}
+
+select#via{
+    margin-left: 30px;
+    width: 80px;
+	float:left;
+}
+
+input#indirizzo{
+    background-color: #3D414D;
+    border:none;
+	-webkit-border-radius: 3px; 
+	-moz-border-radius: 3px; 
+	border-radius: 3px;	
+    color: #FFFFFF;
+    float: left;
+    font-family: 'Roboto',sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    height: 38px;
+    margin-left: 10px;
+    padding-left: 9px;
+    width: 170px;
+}
+
+input#civico{
+    background-color: #3D414D;
+    border:none;
+	-webkit-border-radius: 3px; 
+	-moz-border-radius: 3px; 
+	border-radius: 3px;	
+    color: #FFFFFF;
+    float: left;
+    font-family: 'Roboto',sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    height: 38px;
+    margin-left: 10px;
+    padding-left: 9px;
+    width: 50px;
+}
+
+input#cap{
+    background-color: #3D414D;
+    border:none;
+	-webkit-border-radius: 3px; 
+	-moz-border-radius: 3px; 
+	border-radius: 3px;	
+    color: #FFFFFF;
+    float: left;
+    font-family: 'Roboto',sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    height: 38px;
+    margin-left: 30px;
+    padding-left: 9px;
+    width: 120px;
+}
+
+input#comune{
+    background-color: #3D414D;
+    border:none;
+	-webkit-border-radius: 3px; 
+	-moz-border-radius: 3px; 
+	border-radius: 3px;	
+    color: #878787;
+    float: left;
+    font-family: 'Roboto',sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    height: 38px;
+    margin-left: 10px;
+    padding-left: 9px;
+    width: 190px;
+}
+
+select#operatore{
+    margin-left: 30px;
+    width: 129px;
+	float:left;
+}
+/*
+input#cellulare{
+    background-color: #3D414D;
+    border:none;
+	-webkit-border-radius: 3px; 
+	-moz-border-radius: 3px; 
+	border-radius: 3px;	
+    color: #fff;
+    float: left;
+    font-family: 'Roboto',sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    height: 38px;
+    margin-left: 10px;
+    padding-left: 9px;
+    width: 190px;
+}
+*/
+input#cellulare{
+    background-color: #3D414D;
+    border:none;
+	-webkit-border-radius: 3px; 
+	-moz-border-radius: 3px; 
+	border-radius: 3px;	
+    color: #fff;
+    float: left;
+    font-family: 'Roboto',sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    height: 38px;
+    margin-left: 30px;
+    padding-left: 9px;
+    width: 329px;
+}
+
+div#title_frase_final{
+    color: #FFFFFF;
+	font-family:VeveyRegular;
+    font-size: 56px;
+    font-style: normal;
+    letter-spacing: 1px;
+}
+
+div#frase_final{
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.clear{
+	clear:both;
+} 
+
+.spacer{
+	height:10px;
+}
+
+span.autore{
+	float:right;
+	font-style:italic;
+	margin-top:5px
+}
+
+img#loader_gif{
+	vertical-align:middle; 
+	visibility:hidden;
+}
+
+div#amici_fb{
+    background-color: #282830;
+    border: medium none;
+    border-radius: 3px;
+    color: #FFFFFF;
+    display: none;
+    font-family: 'Roboto',sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    left: 34%;
+    letter-spacing: 1px;
+    line-height: 23px;
+    max-height: 73%;
+    max-width: 40%;
+    padding-left: 14px;
+    padding-top: 14px;
+    position: absolute;
+    top: 27%;
+    z-index: 999;
+}
+
+div.container_amici{
+    height: 247px;
+    overflow-y: scroll;
+}
+
+div.amico{
+    border: 1px solid #ABABAB;
+    float: left;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    width: 200px;
+	cursor:pointer
+}
+
+div.amico:hover, .amico_selected{
+	background-color:#434343;
+}
+
+div.amico img{
+	vertical-align:middle;
+	margin-right:10px;
+}
+
+div.amico input{
+	display:none
+}
+
+/* NASCONDE IL BOTTONE CLOSE SULLA FINESTRA DI JQUERY DIALOG */
+.ui-dialog-titlebar {
+  visibility: hidden;
+}
+
+::-webkit-input-placeholder {
+    color: #FFFFFF;
+    opacity: 1 !important; /* for chrome */
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    color: #FFFFFF;
+    opacity: 1 !important; /* for chrome */
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+    color: #FFFFFF;
+    opacity: 1 !important; /* for chrome */
+}
+
+:-ms-input-placeholder {  
+   color: #FFFFFF;
+    opacity: 1 !important; /* for chrome */
+}
