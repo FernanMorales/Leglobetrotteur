@@ -78,14 +78,14 @@ function menu(id){
 		//$("div#central_title").addClass('animated fadeOut');
 
 		$("div#facebook").remove();
-		/*
+	
 		var pageurl = "form.php";
 		
 		
 		if(pageurl!=window.location){
 			window.history.pushState({path:pageurl},'',pageurl);	
 		}
-		*/
+		
 
 		
 		//window.history.back();
@@ -413,7 +413,6 @@ function vai_c(){
         $("div.privacy_txt").html("").css({"width": "336px", "line-height": "16px", "margin-top": "-10px", "margin-bottom": "15px"}).show();			
 	$(".box2 div#passo").css("background-position", "39px -100px");
 	$("div.top").html("<span class='white'>COMPLETEZ ET </span>PARTEZ!<br />\n\
-        <span id='dob'>date de naissance</span>\n\
         <select name='gg' id='gg' tabindex='1'>\n\
             <option value=''>Jour*</option>"+giorni_select+"</select>\n\
         <select name='mm' id='mm'>\n\
@@ -525,8 +524,6 @@ function vai_c(){
 }
 
 function vai_finale(frase, viaggio, pixel){
-	if(pixel != "none")
-		$("form").append(pixel);
 
 	window.scrollTo(0, 0);
 
@@ -537,7 +534,7 @@ function vai_finale(frase, viaggio, pixel){
 		$("div#right_title").next().css("background-image", "url('"+globe_image_path+viaggio+".jpg')");
 
 		//alert("Step finale: da inserire l'ultimo step con il condividi su facebook");
-		$(".box1 div:first-child + div").html("LA TUA SCELTA").css("background-image", "none");
+		$(".box1 div:first-child + div").html("VOTRE DESTINATION").css("background-image", "none");
 		
 		
 		$("div#form .box2")
@@ -554,12 +551,12 @@ function vai_finale(frase, viaggio, pixel){
 		
 		$("div.top").css("max-width", "641px").html("<div id='title_frase_final'>Frase scelta:</div><div id='frase_final'><span>&ldquo; </span>"+frase+"<span> &rdquo;</span></div><div class='clear spacer'></div>").insertBefore(".box2 div#adsense");
 		
-		$("div.bottom").css("padding", "10px 0 0").html("<div class='clear spacer'></div><div id='facebook-cond' onclick=\"postToFeed(); return false;\">CONDIVIDI SU <span class='bold'>FACEBOOK</span></div><div id='facebook-inv' onclick=\"login_button_fb('amici')\">INVITER DES AMIS</div><div class='clear spacer'></div><div class='clear spacer'></div>").insertBefore(".box2 div#adsense");
+		$("div.bottom").css("padding", "10px 0 0").html("<div class='clear spacer'></div><div id='facebook-cond' onclick=\"postToFeed(); return false;\">PARTAGER SUR <span class='bold'>FACEBOOK</span></div><div id='facebook-inv' onclick=\"login_button_fb('amici')\">INVITER DES AMIS</div><div class='clear spacer'></div><div class='clear spacer'></div>").insertBefore(".box2 div#adsense");
 		
 		$("div#form .box3").remove();
 		
 		$("#adsense iframe").attr("src", "addsense/passo_fine_sx.html");
-		$("div#adsense2").html("<iframe src='addsense/passo_fine_dx.html' frameborder='0'></iframe>");	
+		$("div#adsense2").html("<iframe src='addsense/passo_fine_dx.html' frameborder='0'></iframe>");
 		
 		change_dest("final", false);
 	
@@ -760,7 +757,7 @@ function step(){
 					$.post( "engine/send_data.php", { data_access: true, position: position, nome: nome, cognome: cognome, email: email, data_nascita: anno+"-"+mese+"-"+giorno, sesso: sesso_invio, indirizzo: via+" "+indirizzo+ " "+civico, cap: cap, comune: comune, provincia: provincia, operatore: operatore, cellulare:cellulare, tel_fisso:tel_fisso, ref:ref  })
 						.done(function(data){
 							var data_obtain = jQuery.parseJSON(data);*/
-							vai_finale("ok", "Londra", "null");
+							vai_finale("ok", "londra", "null");
 							
 							$("img#loader_gif").css("visibility", "hidden");
 							

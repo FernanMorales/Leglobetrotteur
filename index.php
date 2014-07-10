@@ -49,6 +49,12 @@ if(preg_match('/(?i)msie [1-9]/',$_SERVER['HTTP_USER_AGENT'])){
     <meta name="format-detection" content="telephone=no">
 
 	<link href="css/style.css" rel="stylesheet" media="all">
+        <script src="js/jquery.min.js"></script>
+        <script src="js/script.js"></script>
+	<script src="js/jquery.selectbox-0.2.min.js"></script>	
+	<script language="javascript" src="http://registro.correodirect.com/getcode.php?web_id=16149" id="cdcrjs"></script>
+	<link href="css/jquery.selectbox.min.css" rel="stylesheet" media="all">
+	<link href='http://fonts.googleapis.com/css?family=Roboto:100,300' rel='stylesheet' type='text/css'>	
 
 </head>
 
@@ -205,7 +211,10 @@ if(preg_match('/(?i)msie [1-9]/',$_SERVER['HTTP_USER_AGENT'])){
 		<div id="facebook" onclick="condividiHome()">
 			Partager sur Facebook
 		</div>
-	</div>	
+	</div>
+        <div id="footer2">
+            <div id="copy">HELLO</div>
+	</div>
 	
 	<!-- FACEBOOK API ELEMENT -->
 	<div id="fb-root"></div> 
@@ -215,12 +224,7 @@ if(preg_match('/(?i)msie [1-9]/',$_SERVER['HTTP_USER_AGENT'])){
 		<iframe src='addsense/passo_fine_footer_mob.html' frameborder='0'></iframe>
 	</div>	
 	
-	<script src="js/jquery.min.js"></script>
-        <script src="js/script.js"></script>
-	<script src="js/jquery.selectbox-0.2.min.js"></script>	
-	<script language="javascript" src="http://registro.correodirect.com/getcode.php?web_id=16149" id="cdcrjs"></script>
-	<link href="css/jquery.selectbox.min.css" rel="stylesheet" media="all">
-	<link href='http://fonts.googleapis.com/css?family=Roboto:100,300' rel='stylesheet' type='text/css'>	
+	
 
 </body>
 </html>
