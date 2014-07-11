@@ -212,9 +212,6 @@ if(preg_match('/(?i)msie [1-9]/',$_SERVER['HTTP_USER_AGENT'])){
 			Partager sur Facebook
 		</div>
 	</div>
-        <div id="footer2">
-            <div id="copy">HELLO</div>
-	</div>
 	
 	<!-- FACEBOOK API ELEMENT -->
 	<div id="fb-root"></div> 

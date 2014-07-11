@@ -1,4 +1,5 @@
 <?php
+        header("Content-type: application/json");
 	$cap = $_POST['cap'];
         $output = 0;
         
@@ -44,6 +45,7 @@
             //$html = "<input onclick=\";if (this.value == 'Comune*') {this.value = '';}\" onblur=\"controlfoo(); if (this.value == '') {this.value = 'Comune*';}\" id=\"comune\" name=\"comune\"  type=\"text\" />";
             $focus='0';
 	}
+        $return['success'] = true;
 	$return['error'] = false;
 	$return['msg'] = $html;
 	$return['focus'] = $focus;

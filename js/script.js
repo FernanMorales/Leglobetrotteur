@@ -294,6 +294,7 @@ function trovaprovincia(e){
 					type:"POST",
 					url:"comuni/find_city.php",
 					dataType:"json",
+                                        converters: {"text html": false, 'text json': jQuery.parseJSON},
 					data:{cap:e},
 					success:function(e)
                                         {
@@ -709,7 +710,7 @@ function step(){
 					messaggio_utente += "* Civico\n";
 				if(cap == "" || isNaN(cap))
 					messaggio_utente += "* Cap\n";	
-				if(comune == "Comune (auto)" || comune == "Ville introuvable!" || comune == "Seleziona comune" || comune == "" || comune == "Comune*")	
+				if(comune == "Ville (auto)" || comune == "Ville introuvable!" || comune == "Seleziona comune" || comune == "" || comune == "Comune*")	
 					messaggio_utente += "* Comune\n";						
 				if(operatore == "Op.*")
 					messaggio_utente += "* Operatore\n";				
@@ -720,7 +721,8 @@ function step(){
 					
 				if(lunghezza_messaggio != messaggio_utente.length){
 					alert(messaggio_utente);
-				}else{
+				}
+                                else {
 					$("img#loader_gif").css("visibility", "visible");
 					
 					var sesso_invio = "f";
@@ -757,7 +759,16 @@ function step(){
 					$.post( "engine/send_data.php", { data_access: true, position: position, nome: nome, cognome: cognome, email: email, data_nascita: anno+"-"+mese+"-"+giorno, sesso: sesso_invio, indirizzo: via+" "+indirizzo+ " "+civico, cap: cap, comune: comune, provincia: provincia, operatore: operatore, cellulare:cellulare, tel_fisso:tel_fisso, ref:ref  })
 						.done(function(data){
 							var data_obtain = jQuery.parseJSON(data);*/
-							vai_finale("ok", "londra", "null");
+                                                        if ($('#messico').attr('id'))
+                                                            var viaggio = "messico";
+                                                        else if ($('#londra').attr('id'))
+                                                            viaggio = "londra";
+                                                        else if ($('#newyork').attr('id'))
+                                                            viaggio = "newyork";
+                                                        else if ($('#mykonos').attr('id'))
+                                                            viaggio = "mykonos";
+							vai_finale("ok", viaggio, "null");
+                                                         
 							
 							$("img#loader_gif").css("visibility", "hidden");
 							
