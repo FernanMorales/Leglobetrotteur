@@ -550,7 +550,7 @@ function vai_finale(frase, viaggio, pixel){
 		
 		$(".box2 div#adsense").css("float", "left").after("<div id='adsense2'></div>");
 		
-		$("div.top").css("max-width", "641px").html("<div id='title_frase_final'>Frase scelta:</div><div id='frase_final'><span>&ldquo; </span>"+frase+"<span> &rdquo;</span></div><div class='clear spacer'></div>").insertBefore(".box2 div#adsense");
+		$("div.top").css("max-width", "641px").html("<div id='title_frase_final'>Merci de votre participation!</div><div class='clear spacer'></div>").insertBefore(".box2 div#adsense");
 		
 		$("div.bottom").css("padding", "10px 0 0").html("<div class='clear spacer'></div><div id='facebook-cond' onclick=\"postToFeed(); return false;\">PARTAGER SUR <span class='bold'>FACEBOOK</span></div><div id='facebook-inv' onclick=\"login_button_fb('amici')\">INVITER DES AMIS</div><div class='clear spacer'></div><div class='clear spacer'></div>").insertBefore(".box2 div#adsense");
 		
@@ -767,7 +767,7 @@ function step(){
                                                             viaggio = "newyork";
                                                         else if ($('#mykonos').attr('id'))
                                                             viaggio = "mykonos";
-							vai_finale("ok", viaggio, "null");
+							vai_finale("", viaggio, "null");
                                                          
 							
 							$("img#loader_gif").css("visibility", "hidden");
