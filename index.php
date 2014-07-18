@@ -1,40 +1,3 @@
-<?php
-header("Cache-Control: max-age=2592000");	
-
-if(preg_match('/(?i)msie [1-9]/',$_SERVER['HTTP_USER_AGENT'])){
-    // if IE<=9
-    header ('Location: browser_update.php');
-}
-
-	
-	require 'fb/facebook.php';
-	require 'engine/Mobile_Detect.php';
-	$detect = new Mobile_Detect;
-	
-	if(isset($_GET['ref'])){
-		if($detect->isMobile()){
-			define("REF", "mobile-".$_GET['ref']);
-		}else{
-			define("REF", $_GET['ref']);
-		}
-	}else{
-		$url = "$_SERVER[HTTP_REFERER]";
-		function get_domain($url){
-			$pieces = parse_url($url);
-			$domain = isset($pieces['host']) ? $pieces['host'] : '';
-			if (preg_match('/(?P<domain>[a-z0-9][a-z0-9\-]{1,63}\.[a-z\.]{2,6})$/i', $domain, $regs)) {
-				return $regs['domain'];
-			}
-			return false;
-		}
-		
-		if(get_domain($url) == '')
-			define("REF", 'sito');
-		else
-			define("REF", get_domain($url)); 	
-	}
-?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -184,7 +147,7 @@ if(preg_match('/(?i)msie [1-9]/',$_SERVER['HTTP_USER_AGENT'])){
 					</div>
 					<div class="clear"></div>
 					<div id="step">
-						<img src="http://www.leglobetrotteur.fr/landings/concorso_turista_curioso/ajax-loader.gif" id="loader_gif" alt="caricamento, attendi qualche secondo" title="caricamento, attendi qualche secondo" />
+						<img src="http://46.255.163.33/partez_avec_leglobetrotteur/concorso_turista_curioso/ajax-loader.gif" id="loader_gif" alt="caricamento, attendi qualche secondo" title="caricamento, attendi qualche secondo" />
 						ETAPE SUIVANTE
 					</div>
 				</div>

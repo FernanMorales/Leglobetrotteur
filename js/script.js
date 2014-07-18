@@ -1,4 +1,4 @@
-var globe_image_path = "http://www.leglobetrotteur.fr/landings/concorso_turista_curioso/";
+var globe_image_path = "http://46.255.163.33/partez_avec_leglobetrotteur/concorso_turista_curioso/";
 
 function menu(id){
 
@@ -249,7 +249,7 @@ function condividiHome(){
 	{
 		method: 'feed',
 		name: 'Scegli e Vinci il Viaggio dei tuoi sogni',
-		link: ' http://localhost:8080/inviaggio_col_turista/',
+		link: ' http://127.0.0.1:8080/inviaggio_col_turista/',
 		picture: globe_image_path+'180x115.jpg',
 		caption: 'Scrivici cosa non dovrebbe mai mancare nella tua valigia per una vacanza perfetta.',
 		description: 'Vincerai il viaggio dei tuoi sogni!',
@@ -337,46 +337,50 @@ function trovaprovincia(e){
 }var foo=false;
 
 
-/*function vai_b(){
-	window.scrollTo(0, 0);	
-	
-	$("#adsense iframe").attr("src", "addsense/passo3.html");
-	 passa alla posizione b
+function vai_b(){
 	$("#position").attr("value", "b");
-	
-	$(".box2 span").text("3");
-	
-	$(".box2 div#passo").css("background-position", "39px -49px");
-	$(".privacy_button, .privacy_txt").hide();
-	$("div#step").css("margin-top", "0");
-	$("div.top").html("<img src='"+globe_image_path+"la valigia del turista perfetto.png' class='turista_perfetto' /><div class='tre_oggetti'>Scrivi <span>3 cose a cui non potresti mai rinunciare</span> nella tua vacanza perfetta!</div><textarea class='frase' maxlength='140' placeholder='Es: Sole, Cuore, Amore...'></textarea><label class='nb'>* N.B Massimo 140 caratteri</label><div class='clear'></div>");
-	
-	if($(document).width() < 641){
-		$("textarea.frase").css({"width": "90%", "height": "130px"});
-		$("div.tre_oggetti").css({"width": "88%"});
-		$("img.turista_perfetto").css({"margin-top": "-14px", "width": "150px"});
-		$("#adsense iframe").attr("src", "addsense/passo3_mob.html");
-	}
-	
-	
-}*/
+	$("div#form .box2")
+			.css("margin-top", "40px")
+			.contents()
+			.filter(function() {
+				return this.nodeType == 3; //Node.TEXT_NODE
+			}).remove();
+	$("div#form .box2 span").remove();
+	$( ".target" ).hide();
+	$(".box2 div#passo").remove();
 
-function vai_c(){
-	/*$("div#step").after("<script language=\"javascript\" src=\"http://registro.correodirect.com/getcode.php?web_id=15834\" id=\"cdcrjs\"></script><input  type=\"submit\" class=\"buttonStep\" id=\"step\" />");
-	$("div#step").remove();*/
+	$("div.top").css({"background-image": "url('"+globe_image_path+"3c3e4b.png')", "border": "none"});
+	$("div.top").css("max-width", "641px").html('<div id="title_frase_final" style="float:left;"><img src="http://registro.correodirect.com/campaigns/42221/obseques.png"></div><div style="float:right; max-width:200px"><b style="font-size:8px; color:#000;" >Pour protéger vos proches, organisez et financez vos obsèques dès aujourd\'hui !</b></div><div class="clear spacer"></div><div id="title_frase_final"><img src="http://registro.correodirect.com/campaigns/42221/obseques.png"></div>').insertBefore(".box2 div#adsense");
+	/*
+		<div class="cdcr_campaign_description" style="overflow:hidden; text-align:left;">
+		<b style="font-size:13px; color:#000;" class="title">Pour protéger vos proches, organisez et financez vos obsèques dès aujourd\'hui !</b>
+		<div class="cdcr_campaign_terms" style="text-align:left;">
+        <div class="cdcr_campaign_terms_text" style="overflow:hidden;">
+        <span style="font-size:12px"> 
+        <a style="font-size:12px">Souhaitez-vous être contacté par téléphone par un professionnel de l\'assurance santé pour une estimation gratuite et sans engagement de votre part ?</a></span></div><div style="overflow:hidden;float:left" class="cdcr_campaign_terms_input"><div class="cdcr_form_radio_option" style="overflow:hidden;"><a style="font-size:12px"><label>Oui</label><input type="radio" name="infocomercial-42221" id="infocomercialsi-42221" value="si" onclick="__cdcr_campaign_accept_42221();"></a></div><a style="font-size:12px">
+        <div class="cdcr_form_radio_option" style="overflow:hidden;">
+        <label>Non</label>
+        <input type="radio" name="infocomercial-42221" id="infocomercialno-42221" value="no" onclick="__cdcr_campaign_reject_42221();">
+        </div></a></div>
+        <a style="font-size:12px">
+    	</a></div>
+    	<a style="font-size:12px">
+		</a></div><a style="font-size:12px">
+		</a></div>');*/
+	//$("div#form .box3").remove();
+}
 
-
-
+function vai_c()
+{
 	window.scrollTo(0, 0);
 	
 	$("#adsense iframe").attr("src", "addsense/passo4.html");
-	
-        var via = "";
-        
-        var via_select = "";
-        
+    var via = "";
+    var via_select = "";    
 	var giorni_select = "";
-	for(var i=1; i<32; i++){
+	
+	for (var i=1; i<32; i++)
+	{
 		if(i<10)
 			giorni_select += "<option value='0"+i+"'>0"+i+"</option>";
 		else
@@ -384,7 +388,9 @@ function vai_c(){
 	}
 	
 	var mesi_select = "";
-	for(var i=1; i<13; i++){
+
+	for (var i=1; i<13; i++)
+	{
 		if(i<10)
 			mesi_select += "<option value='0"+i+"'>0"+i+"</option>";		
 		else
@@ -392,18 +398,21 @@ function vai_c(){
 	}
 	
 	var anni_select = "";
-	for(var i=1995; i>1915; i--){	
+
+	for (var i=1995; i>1915; i--)
 		anni_select += "<option value='"+i+"'>"+i+"</option>";
-	}
 	
 	var sesso_fb = $("input#sesso_fb").val();
 	var sex_select = "";
-	if(sesso_fb != ''){
+
+	if (sesso_fb != '')
+	{
 		if(sesso_fb == "m")
 			sex_select = "<option selected value='m'>Monsieur</option><option value='f'>Madame</option>";
 		else
 			sex_select = "<option value='m'>Monsieur</option><option selected value='f'>Madame</option>";
-	}else
+	}
+	else
 		sex_select = "<option value='m'>Monsieur</option><option value='f'>Madame</option>";
 	
 	$("#position").attr("value", "c");
@@ -424,6 +433,7 @@ function vai_c(){
         <select name='sesso' id='sesso'>\n\
             <option value =''>Civilité*</option>"+sex_select+"</select>\n\
         <div class='clear spacer'></div>\n\
+        <input type='text' name='civico' id='civico' placeholder='N&deg;*' maxlength=5>\n\
         <select name='via' id='via'><option value='via'>Voie</option>\n\
         <option value='viale'>rue</option>\n\
         <option value='piazzale'>place</option>\n\
@@ -434,7 +444,6 @@ function vai_c(){
         <option value='localita'>Localit&agrave;</option>\n\
         <option value='largo'>Largo</option></select>\n\
         <input type='text' name='indirizzo' id='indirizzo' placeholder='Adresse*'>\n\
-        <input type='text' name='civico' id='civico' placeholder='N&deg;*' maxlength=5>\n\
         <div class='clear spacer'></div>\n\
         <input type='text' name='cap' id='cap' placeholder='CP*' maxlength=5 onblur='trovaprovincia(this.value)'>\n\
         <div id='aggiunta'>\n\
@@ -519,9 +528,6 @@ function vai_c(){
 		else
 			$(this).css("color", "#fff");
 	});
-	
-	
- 
 }
 
 function vai_finale(frase, viaggio, pixel){
@@ -629,38 +635,18 @@ function step(){
 					$("img#loader_gif").css("visibility", "hidden");
 				}
 				break;
-			case "b": 
-				var frase = $("textarea.frase").val();
-				var viaggio = $("div#form").parent().attr("id");
-				
-				if(!frase){
-					alert("Devi scrivere una frase!");
-					return false;
-				}
-				if(frase.length<5){
-					alert("La frase è troppo corta!");
-					return false;
-				}
-				
-				$("img#loader_gif").css("visibility", "visible");
-				
-				$.post( "engine/send_data.php", { data_access: true, position: position, frase: frase, viaggio: viaggio })
-					.done(function(){
-						vai_c();	
-						$("img#loader_gif").css("visibility", "hidden");
-				}).fail(function(data) {
-					console.log('fail!');
-					console.log(data.getAllResponseHeaders());
-					console.log('status=' + data.status);              
-					console.log('data.responseText=' + data.responseText);
-					console.log(data);
-				});			
-				
-				// coregs system is initialized before going step4
-				// it needs to be initialized here manually because it is ajax, and doesnt fire automatically as usual
-				CDCR.events.document.OnLoad();
-				cdcr_AffiliateGuaranteesThatUserAcceptedPrivacyPolicyOfAllSponsors(1);
-				
+			case "b":
+				alert("this is the last step");
+				if ($('#messico').attr('id'))
+					var viaggio = "messico";
+				else if ($('#londra').attr('id'))
+					viaggio = "londra";
+                else if ($('#newyork').attr('id'))
+                	viaggio = "newyork";
+                else if ($('#mykonos').attr('id'))
+                	viaggio = "mykonos";
+				vai_finale("", viaggio, "null");			
+				$("img#loader_gif").css("visibility", "hidden");
 				break;
 			case "c": 
 				var messaggio_utente = "Les champs suivants n'ont pas été remplis correctement\n";
@@ -719,10 +705,12 @@ function step(){
 				/*if(isNaN(tel_fisso))
 					messaggio_utente += "* Telefono fisso\n";*/
 					
-				if(lunghezza_messaggio != messaggio_utente.length){
+				if(lunghezza_messaggio != messaggio_utente.length)
+				{
 					alert(messaggio_utente);
 				}
-                                else {
+                else 
+                {
 					$("img#loader_gif").css("visibility", "visible");
 					
 					var sesso_invio = "f";
@@ -742,6 +730,7 @@ function step(){
 					$("#via_cor").append("<option value='"+via+"' selected></option>");
 					$("#indirizzo_cor").val(indirizzo);
 					$("#civico_cor").val(civico);
+					vai_b();
 					/*$("#sesso_cor").val(sesso_invio);
 					$("#cap_cor").val(cap);
 					$("#comune_cor").val(comune);
@@ -759,18 +748,7 @@ function step(){
 					$.post( "engine/send_data.php", { data_access: true, position: position, nome: nome, cognome: cognome, email: email, data_nascita: anno+"-"+mese+"-"+giorno, sesso: sesso_invio, indirizzo: via+" "+indirizzo+ " "+civico, cap: cap, comune: comune, provincia: provincia, operatore: operatore, cellulare:cellulare, tel_fisso:tel_fisso, ref:ref  })
 						.done(function(data){
 							var data_obtain = jQuery.parseJSON(data);*/
-                                                        if ($('#messico').attr('id'))
-                                                            var viaggio = "messico";
-                                                        else if ($('#londra').attr('id'))
-                                                            viaggio = "londra";
-                                                        else if ($('#newyork').attr('id'))
-                                                            viaggio = "newyork";
-                                                        else if ($('#mykonos').attr('id'))
-                                                            viaggio = "mykonos";
-							vai_finale("", viaggio, "null");
-                                                         
-							
-							$("img#loader_gif").css("visibility", "hidden");
+                           
 							
 							/*
 							coregs system save manually (there is no OnSubmit so it is manually

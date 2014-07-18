@@ -1,0 +1,155 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {margin:0;background:#4BADD5 url(images/top.jpg) no-repeat; text-align:center; padding:0}
+
+#prout {
+	display:block;
+	position:relative;
+	width:1000px;
+	text-align:left;
+	margin:auto;
+	top:400px;
+
+}
+#text {
+	display:block;
+	position:relative;
+	width:1000px;
+	font-family:Arial, Helvetica, sans-serif; 
+	font-size:18px; 
+	color:#FFF;
+	margin:auto;
+	background-color:#2885AC;
+	padding-top: 30px;
+	top:405px;
+	
+}
+#form {
+	margin-left:auto;
+	margin-right:auto;
+	padding-top:30px;
+	width:1000px;
+/* Height must be take off when you have add coregs div */ 	
+	position:relative;
+	background-color: #2885AC;
+	top:405px;
+	
+}
+#submit {
+	display:block;
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+	bottom:30px;
+}
+
+
+.sponsors {
+border: none; color: #000; width: 500px; font-family: Calibri, Arial; margin: auto; font-weight: bold; font-size: 12px;
+}
+.rotate {
+width: 475px;
+}
+.rotate li {
+margin-right: 25px; height: 89px; width: 95px;
+}
+.ui-widget {
+font-family: Arial,sans-serif; font-size: 0.7em;
+}
+.non-optin {
+text-align: left; color: #373940; font-family: Arial; font-size: 11px; padding-top: 5px; padding-left: 10px; padding-right: 10px; text-decoration: none; position:relative; top:10px;
+}
+.non-optin-link {
+text-align: left; color: #646875; font-family: Arial; font-size: 11px; padding-top: 5px; padding-left: 0px; padding-right: 5px; text-decoration: underline;
+}
+.submit {
+background-image: url(images/bouton.png); width:404px; height: 80px; border: none; background-color: transparent;
+}
+.adsenseIzq {
+float: left;
+margin-right: 27px;
+width: 300px;
+height: 250px;
+border: solid 2px #f3f3f3;
+}
+
+.adsenseDcha {
+    float: left;
+    width: 300px;
+    height: 250px;
+    border: solid 2px #f3f3f3;
+}
+
+
+.FRsponsors{
+	padding:3px;
+	margin:auto;
+	width:300px;
+	text-align:center;
+}
+.FRsponsors img{
+    vertical-align: middle;
+}
+
+.sponsors{
+    color: #000;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 780px;
+}
+
+#caja_logos img {
+    height: 25px !important;
+    width: 100px !important;
+}
+
+.commonHeader{
+margin:auto;
+width:1000px;
+background:url(images/coreg_page_header.png) no-repeat top;
+padding-top:170px;
+margin-bottom:6px;
+}
+.txtThanks{
+    font-size: 13px;
+    font-family: Trebuchet MS;
+    padding-5px;
+    margin-bottom:5px;
+}
+.cdcr_campaign_description .title{font-size:13px !important;font-color:#000 !important;}
+.cdcr_campaign_description{
+font-size:12px !important;
+}
+#thankyou {
+    display: block;
+    margin: auto;
+    position: relative;
+    text-align: left;
+}
+.adsenseIzq {
+float: left;
+margin-right: 27px;
+width: 300px;
+height: 250px;
+border: solid 2px #f3f3f3;
+}
+
+.adsenseDcha {
+    float: left;
+    width: 300px;
+    height: 250px;
+    border: solid 2px #f3f3f3;
+    margin-bottom: 20px;
+}
+.txtThanks{
+    font-size: 13px;
+    font-family: Trebuchet MS;
+    padding-5px;
+    margin-bottom:5px;
+}
+.cdcr_campaign_description .title{font-size:13px !important;font-color:#000 !important;}
+.cdcr_campaign_description{
+font-size:12px !important;
+}
