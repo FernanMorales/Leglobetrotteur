@@ -25,7 +25,17 @@ body {margin:0;background:#4BADD5 url(images/top.jpg) no-repeat; text-align:cent
 	top:405px;
 	
 }
-
+#form {
+	margin-left:auto;
+	margin-right:auto;
+	padding-top:30px;
+	width:1000px;
+/* Height must be take off when you have add coregs div */ 	
+	position:relative;
+	background-color: #2885AC;
+	top:405px;
+	
+}
 #submit {
 	display:block;
 	position:relative;

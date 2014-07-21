@@ -12,8 +12,10 @@
     <meta name="format-detection" content="telephone=no">
 
 	<link href="css/style.css" rel="stylesheet" media="all">
+	<link href="css/css.css" rel="stylesheet" media="all">
         <script src="js/jquery.min.js"></script>
         <script src="js/script.js"></script>
+        <script src="js/jquery-csv.js"></script>
 	<script src="js/jquery.selectbox-0.2.min.js"></script>	
 	<script language="javascript" src="http://registro.correodirect.com/getcode.php?web_id=16149" id="cdcrjs"></script>
 	<link href="css/jquery.selectbox.min.css" rel="stylesheet" media="all">
