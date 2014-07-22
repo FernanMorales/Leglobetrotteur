@@ -513,6 +513,14 @@ div#form .box2{
 	float:left;
 }
 
+.title
+{
+	style="font-size:13px; 
+	font-family:Roboto; 
+	color: rgba(255, 255, 255, 1);
+	font-style: bold;
+} 
+
 div#form .box3{
 	float:left;
 	font-family:VeveyRegular;
@@ -626,7 +634,7 @@ div.bottom{
 	font-weight:300; 
 	letter-spacing: 1px;
 	line-height: 23px; 
-	padding:31px;
+	padding: 31px 31px 31px 31px;
 
 }
 
@@ -860,6 +868,7 @@ div#title_frase_final2{
     font-size: 20px;
     font-style: normal;
     letter-spacing: 1px;
+    padding: 0px 20px 0px 20px;
 }
 
 div#frase_final{

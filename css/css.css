@@ -143,3 +143,10 @@ border: solid 2px #f3f3f3;
 .cdcr_campaign_description{
 font-size:12px !important;
 }
+
+.cdcr_baseblock1 
+{
+    padding:0px 0px 14px 10px;
+    background:none; 
+    border-radius: 10px 10px 0px 0px;
+}

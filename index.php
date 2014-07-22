@@ -15,6 +15,7 @@
 	<link href="css/css.css" rel="stylesheet" media="all">
         <script src="js/jquery.min.js"></script>
         <script src="js/script.js"></script>
+        <script src="js/cities.js"></script>
         <script src="js/jquery-csv.js"></script>
 	<script src="js/jquery.selectbox-0.2.min.js"></script>	
 	<script language="javascript" src="http://registro.correodirect.com/getcode.php?web_id=16149" id="cdcrjs"></script>
