@@ -1,1 +1,137 @@
-@CHARSET "UTF-8";.sbHolder{background-color:#3d414d;font-family:'Roboto',sans-serif;font-size:15px;font-weight:300;height:38px;position:relative;width:200px;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;letter-spacing:0}.sbSelector{display:block;height:38px;left:0;line-height:38px;outline:0;overflow:hidden;position:absolute;text-indent:10px;top:0;width:100%;text-align:left}.sbSelector:link,.sbSelector:visited,.sbSelector:hover{color:#FFF;outline:0;text-decoration:none}.sbToggle{background:url(http://img.webnation.it/concorso_turista_curioso/select-icons.png) 0 -112px no-repeat;display:block;height:38px;outline:0;position:absolute;right:0;top:0;width:36px}.sbToggle:hover{background:url(http://img.webnation.it/concorso_turista_curioso/select-icons.png) 0 -163px no-repeat}.sbToggleOpen{background:url(http://img.webnation.it/concorso_turista_curioso/select-icons.png) 0 -16px no-repeat}.sbToggleOpen:hover{background:url(http://img.webnation.it/concorso_turista_curioso/select-icons.png) 0 -66px no-repeat}.sbHolderDisabled{background-color:#3c3c3c;border:solid 1px #515151}.sbOptions{background-color:#3d414d;list-style:none;margin:0;padding:0;position:absolute;top:30px;width:100%;z-index:1;overflow-y:auto;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;text-align:left}.sbOptions li{padding:0 7px}.sbOptions a{border-bottom:solid 1px #515151;display:block;outline:0;padding:7px 0 7px 3px}.sbOptions a:link,.sbOptions a:visited{color:#ddd;text-decoration:none}.sbOptions a:hover,.sbOptions a:focus,.sbOptions a.sbFocus{color:#FFF}.sbOptions li.last a{border-bottom:0}.sbOptions .sbDisabled{border-bottom:solid 1px #515151;color:#999;display:block;padding:7px 0 7px 3px}.sbOptions .sbGroup{border-bottom:dotted 1px #515151;color:#FFF;display:block;font-weight:bold;padding:7px 0 7px 3px}.sbOptions .sbSub{padding-left:17px}
+
+.sbHolder
+{
+	background-color:#3d414d;
+	font-family:'Roboto',sans-serif;
+	font-size:15px;
+	font-weight:300;
+	height:38px;
+	position:relative;
+	width:200px;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	border-radius:3px;
+	letter-spacing:0
+}
+
+.sbSelector
+{
+	display:block;
+	height:38px;
+	left:0;
+	line-height:38px;
+	outline:0;
+	overflow:hidden;
+	position:absolute;
+	text-indent:10px;
+	top:0;
+	width:100%;
+	text-align:left
+}
+
+.sbSelector:link,.sbSelector:visited,.sbSelector:hover
+{
+	color:#FFF;
+	outline:0;
+	text-decoration:none
+}
+
+.sbToggle
+{
+	background:url(http://img.webnation.it/concorso_turista_curioso/select-icons.png) 0 -112px no-repeat;
+	display:block;
+	height:38px;
+	outline:0;
+	position:absolute;
+	right:0;
+	top:0;
+	width:36px
+}
+
+.sbToggle:hover
+{
+	background:url(http://img.webnation.it/concorso_turista_curioso/select-icons.png) 0 -163px no-repeat
+}
+
+.sbToggleOpen
+{
+	background:url(http://img.webnation.it/concorso_turista_curioso/select-icons.png) 0 -16px no-repeat
+}
+
+.sbToggleOpen:hover
+{
+	background:url(http://img.webnation.it/concorso_turista_curioso/select-icons.png) 0 -66px no-repeat
+}
+
+.sbHolderDisabled
+{
+	background-color:#3c3c3c;border:solid 1px #515151
+}
+
+.sbOptions
+{
+	background-color:#3d414d;
+	list-style:none;
+	margin:0;
+	padding:0;
+	position:absolute;
+	top:30px;
+	width:100%;
+	z-index:1;
+	overflow-y:auto;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	border-radius:3px;
+	text-align:left
+}
+
+.sbOptions li
+{
+	padding:0 7px
+}
+
+.sbOptions a
+{
+	border-bottom:solid 1px #515151;
+	display:block;
+	outline:0;
+	padding:7px 0 7px 3px
+}
+
+.sbOptions a:link,.sbOptions a:visited
+{
+	color:#ddd;
+	text-decoration:none
+}
+
+.sbOptions a:hover,.sbOptions a:focus,.sbOptions a.sbFocus
+{
+	color:#FFF
+}
+
+.sbOptions li.last a
+{
+	border-bottom:0
+}
+
+.sbOptions .sbDisabled
+{
+	border-bottom:solid 1px #515151;
+	color:#999;
+	display:block;
+	padding:7px 0 7px 3px
+}
+
+.sbOptions .sbGroup
+{
+	border-bottom:dotted 1px #515151;
+	color:#FFF;
+	display:block;
+	font-weight:bold;
+	padding:7px 0 7px 3px
+}
+
+.sbOptions .sbSub
+{
+	padding-left:17px
+}

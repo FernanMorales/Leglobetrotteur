@@ -25,7 +25,6 @@
 </head>
 
 <body>
-	<?php include_once("analyticstracking.php") ?>
 	
 <!-- FORM CD -->
 	<form name="INTEGRATION_ConfigForm">
@@ -132,7 +131,6 @@
 			<div class="box3">
 				<div class="top">
 					PARTEZ <span class="white">AVEC LE GLOBETROTTER</span>
-					<?php include ("fb/button_fb.php"); ?>
 					<input type="text" name="nome" id="nome" placeholder="Prénom *" class="icon_a">
 					<input type="text" name="cognome" id="cognome" placeholder="Nom *" class="icon_a">
 					<input type="text" name="email" id="email" placeholder="Email *" class="icon_b">
@@ -150,7 +148,7 @@
 					</div>
 					<div class="clear"></div>
 					<div id="step">
-						<img src="http://46.255.163.33/partez_avec_leglobetrotteur/concorso_turista_curioso/ajax-loader.gif" id="loader_gif" alt="caricamento, attendi qualche secondo" title="caricamento, attendi qualche secondo" />
+						<img src="http://127.0.0.1:3000/concorso_turista_curioso/ajax-loader.gif" id="loader_gif" alt="caricamento, attendi qualche secondo" title="caricamento, attendi qualche secondo" />
 						ETAPE SUIVANTE
 					</div>
 				</div>

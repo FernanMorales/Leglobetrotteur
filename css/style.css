@@ -39,14 +39,14 @@
 	}
 	
 	div#logo{
-		background-image: url("http://46.255.163.33/partez_avec_leglobetrotteur/concorso_turista_curioso/logo_turista_curioso_mob.png") !important;
+		background-image: url("http://127.0.0.1:3000/concorso_turista_curioso/logo_turista_curioso_mob.png") !important;
 		top: 4% !important;
 		width: 25% !important;
 		left: 1% !important;
 		max-height: 22vw !important;
 	}
 	div#central_title{
-		background-image: url("http://46.255.163.33/partez_avec_leglobetrotteur/concorso_turista_curioso/logo_mobile.png") !important;
+		background-image: url("http://127.0.0.1:3000/concorso_turista_curioso/logo_mobile.png") !important;
 		top: 2% !important;
 		height: 31vw !important;
 		width:50% !important;
@@ -55,19 +55,19 @@
 	}	
 	
 	div#londra{
-		background-image: url("http://46.255.163.33/partez_avec_leglobetrotteur/concorso_turista_curioso/londra_select.jpg") !important;
+		background-image: url("http://127.0.0.1:3000/concorso_turista_curioso/londra_select.jpg") !important;
 	}
 
 	div#newyork{
-		background-image: url("http://46.255.163.33/partez_avec_leglobetrotteur/concorso_turista_curioso/newyork_select.jpg") !important;
+		background-image: url("http://127.0.0.1:3000/concorso_turista_curioso/newyork_select.jpg") !important;
 	}
 
 	div#messico{
-		background-image: url("http://46.255.163.33/partez_avec_leglobetrotteur/concorso_turista_curioso/messico_select.jpg") !important;
+		background-image: url("http://127.0.0.1:3000/concorso_turista_curioso/messico_select.jpg") !important;
 	}
 
 	div#mykonos{
-		background-image: url("http://46.255.163.33/partez_avec_leglobetrotteur/concorso_turista_curioso/mykonos_select.jpg") !important;
+		background-image: url("http://127.0.0.1:3000/concorso_turista_curioso/mykonos_select.jpg") !important;
 	}
 	
 	
@@ -115,7 +115,7 @@
 	}
         
 	div#facebook{
-		background-image: url("http://46.255.163.33/partez_avec_leglobetrotteur/concorso_turista_curioso/fb.png") !important;
+		background-image: url("http://127.0.0.1:3000/concorso_turista_curioso/fb.png") !important;
 		border: none !important;
 		float: right !important;
 		width: 41px !important;
@@ -140,13 +140,13 @@
 	div#facebook{
 		background-position: 0 0 !important;
 	}
-	
+	/*
 	div#facebook-login{
 	    margin: 0 auto;
 		padding-left: 15%;
 		width: 79%;	
 	}
-	
+	*/
 	div#adsense_mobile_fisso{
 		display:block !important;
 	}
@@ -222,7 +222,7 @@ div#newyork .overlay, div#londra .overlay, div#mykonos .overlay, div#messico .ov
 }
 
 div#newyork, div#newyork .overlay{
-	background-image: url("http://46.255.163.33/partez_avec_leglobetrotteur/concorso_turista_curioso/newyork.jpg");
+	background-image: url("http://127.0.0.1:3000/concorso_turista_curioso/newyork.jpg");
 }
 
 div#newyork .select, div#londra .select, div#mykonos .select, div#messico .select{
@@ -236,41 +236,41 @@ div#newyork .select, div#londra .select, div#mykonos .select, div#messico .selec
 }
 
 div#newyork .select{
-	background-image: url("http://46.255.163.33/partez_avec_leglobetrotteur/concorso_turista_curioso/parti_newyork.png");
+	background-image: url("http://127.0.0.1:3000/concorso_turista_curioso/parti_newyork.png");
 	background-size:14vw;
 	margin-top:-50vh;
 	height: 14vw;
 }
 
 div#londra, div#londra .overlay{
-	background-image: url("http://46.255.163.33/partez_avec_leglobetrotteur/concorso_turista_curioso/londra.jpg");
+	background-image: url("http://127.0.0.1:3000/concorso_turista_curioso/londra.jpg");
 }
 
 
 div#londra .select{
-	background-image: url("http://46.255.163.33/partez_avec_leglobetrotteur/concorso_turista_curioso/parti_londra.png");
+	background-image: url("http://127.0.0.1:3000/concorso_turista_curioso/parti_londra.png");
 	background-size:14vw;
 	margin-top:-50vh;
 	height: 14vw;
 }
 
 div#mykonos, div#mykonos .overlay{
-	background-image: url("http://46.255.163.33/partez_avec_leglobetrotteur/concorso_turista_curioso/mykonos.jpg");
+	background-image: url("http://127.0.0.1:3000/concorso_turista_curioso/mykonos.jpg");
 }
 
 div#mykonos .select{
-	background-image: url("http://46.255.163.33/partez_avec_leglobetrotteur/concorso_turista_curioso/parti_mykonos.png");
+	background-image: url("http://127.0.0.1:3000/concorso_turista_curioso/parti_mykonos.png");
 	background-size:14vw;
 	margin-top:-50vh;
 	height: 14vw;
 }
 
 div#messico, div#messico .overlay{
-	background-image: url("http://46.255.163.33/partez_avec_leglobetrotteur/concorso_turista_curioso/messico.jpg");
+	background-image: url("http://127.0.0.1:3000/concorso_turista_curioso/messico.jpg");
 }
 
 div#messico .select{
-	background-image: url("http://46.255.163.33/partez_avec_leglobetrotteur/concorso_turista_curioso/parti_messico.png");
+	background-image: url("http://127.0.0.1:3000/concorso_turista_curioso/parti_messico.png");
 	background-size:14vw;
 	margin-top:-50vh;
 	height: 14vw;	
@@ -279,7 +279,7 @@ div#messico .select{
 
 div#logo{
 	position: absolute;
-	background-image: url("http://46.255.163.33/partez_avec_leglobetrotteur/concorso_turista_curioso/logo_turista_curioso.png");
+	background-image: url("http://127.0.0.1:3000/concorso_turista_curioso/logo_turista_curioso.png");
 	background-size: 100%;
 	background-repeat: no-repeat;
 	width:20%;
@@ -294,7 +294,7 @@ div#logo{
 
 div#right_title{
 	position: absolute;
-	background-image: url("http://46.255.163.33/partez_avec_leglobetrotteur/concorso_turista_curioso/titolo.png");
+	background-image: url("http://127.0.0.1:3000/concorso_turista_curioso/titolo.png");
 	background-size: 100%;
 	background-repeat: no-repeat;
 	width:13vw;
@@ -306,7 +306,7 @@ div#right_title{
 }
 
 div#central_title {
-    background-image: url("http://46.255.163.33/partez_avec_leglobetrotteur/concorso_turista_curioso/scegli.png");
+    background-image: url("http://127.0.0.1:3000/concorso_turista_curioso/scegli.png");
     background-repeat: no-repeat;
     background-size: 25vw auto;
     height: 11vw;
@@ -345,7 +345,7 @@ div#facebook{
     text-align: right;
     width: 172px;
 	cursor:pointer;
-	background-image: url("http://46.255.163.33/partez_avec_leglobetrotteur/concorso_turista_curioso/fb_icon_footer.png");
+	background-image: url("http://127.0.0.1:3000/concorso_turista_curioso/fb_icon_footer.png");
 	background-repeat:no-repeat;
 	background-position:10px 3px;
 }
@@ -377,7 +377,7 @@ div#form .box1{
 	width:100%;
 	height:300px;
 	text-align:center;
-	background-image:url('http://46.255.163.33/partez_avec_leglobetrotteur/concorso_turista_curioso/white.png');
+	background-image:url('http://127.0.0.1:3000/concorso_turista_curioso/white.png');
 	border-top:1px solid #e6e6e6;
 	border-left:1px solid #e6e6e6
 }
@@ -391,7 +391,7 @@ div#form .box1{
 .box1 div:first-child + div{
 	width:100%;
 	height:55px;
-	background-image:url('http://46.255.163.33/partez_avec_leglobetrotteur/concorso_turista_curioso/arrow.png');
+	background-image:url('http://127.0.0.1:3000/concorso_turista_curioso/arrow.png');
 	background-repeat:no-repeat;
 	font-family:VeveyRegular;
 	color:#fff;
@@ -405,7 +405,7 @@ div#form .box1{
 
 .box1 div:first-child + div + div{
 	text-align:left;
-	background-image:url('http://46.255.163.33/partez_avec_leglobetrotteur/concorso_turista_curioso/3c3e4b.png');
+	background-image:url('http://127.0.0.1:3000/concorso_turista_curioso/3c3e4b.png');
 	font-family: 'Roboto', sans-serif;
 	color:#fff;
 	font-size:12px;
@@ -452,7 +452,7 @@ div#form .box2{
 	margin-top:23px;
 	width:301px;
 	height: 47px;
-	background-image: url("http://46.255.163.33/partez_avec_leglobetrotteur/concorso_turista_curioso/passo_sprite.png");
+	background-image: url("http://127.0.0.1:3000/concorso_turista_curioso/passo_sprite.png");
 	background-repeat: no-repeat;
 	background-position: 39px 5px;
 	-webkit-transition: background-image 0.2s ease-in-out;
@@ -535,7 +535,7 @@ div#form .box3{
 }
 
 div.top{
-	background-image: url("http://46.255.163.33/partez_avec_leglobetrotteur/concorso_turista_curioso/white.png");
+	background-image: url("http://127.0.0.1:3000/concorso_turista_curioso/white.png");
     border-left: 1px solid #E6E6E6;
     border-top: 1px solid #E6E6E6;
 	padding-top:30px;
@@ -544,22 +544,22 @@ div.top{
 .box3 div span.white{
 	color:#fff;
 }
-
+/*
 div#facebook-login, div#facebook-inv, div#facebook-cond, div.cinquanta, div.inviaRichiestaAmici{
 	font-family: 'Roboto', sans-serif;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
 	background-color: #3c5a99;
 	letter-spacing:1px;
-	background-image: url("http://46.255.163.33/partez_avec_leglobetrotteur/concorso_turista_curioso/fb_icon.png");
+	background-image: url("http://127.0.0.1:3000/concorso_turista_curioso/fb_icon.png");
 	background-position:left;
 	background-repeat: no-repeat;
 	color:#fff;
 	line-height:50px;
 	cursor:pointer;
 
-}
-
+}*/
+/*
 div#facebook-login{
 	font-size: 15px;
 	height: 53px;
@@ -567,7 +567,7 @@ div#facebook-login{
 	width: 250px;
 	margin-left:40px;
 }
-	
+*/	
 div#facebook-inv, div#facebook-cond, div.cinquanta, div.inviaRichiestaAmici{
 	float:left;
 	font-size: 16px;
@@ -578,11 +578,11 @@ div#facebook-inv, div#facebook-cond, div.cinquanta, div.inviaRichiestaAmici{
 	font-style:normal;
 	text-align:center;
 }
-
+/*
 div#facebook-login span.bold{
 	font-weight:500;
 }
-
+*/
 
 input.icon_a, input.icon_b{
 	font-size:20px; 
@@ -600,11 +600,11 @@ input.icon_a, input.icon_b{
 }
 
 input.icon_a{
-	background-image: url("http://46.255.163.33/partez_avec_leglobetrotteur/concorso_turista_curioso/icon1.png");
+	background-image: url("http://127.0.0.1:3000/concorso_turista_curioso/icon1.png");
 }
 
 input.icon_b{	
-	background-image: url("http://46.255.163.33/partez_avec_leglobetrotteur/concorso_turista_curioso/icon2.png");
+	background-image: url("http://127.0.0.1:3000/concorso_turista_curioso/icon2.png");
 }
 
 label.nb{
@@ -627,7 +627,7 @@ label.nb{
 div.bottom{
 	clear:both;
 	text-align:right;
-	background-image:url('http://46.255.163.33/partez_avec_leglobetrotteur/concorso_turista_curioso/3c3e4b.png');
+	background-image:url('http://127.0.0.1:3000/concorso_turista_curioso/3c3e4b.png');
 	font-family: 'Roboto', sans-serif;
 	color:#fff;
 	font-size:12px;
