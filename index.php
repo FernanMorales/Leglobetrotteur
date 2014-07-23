@@ -42,25 +42,30 @@
 	<form name="INTEGRATION_Categories">
 	<input type="hidden" name="0" value="ItemperRow">
 	</form>
-	<form name="INTEGRATION_Data">
-		<input type="hidden" name="email" value="email">
-		<input type="hidden" name="nome" value="Fname">
-		<input type="hidden" name="cognome" value="Lname">
-	    <input type="hidden" name="sesso" value="Sex">
-	    <input type="hidden" name="cap" value="ZipCode">
-	    <input type="hidden" name="comune" value="City">
-
-	    <input type="hidden" name="aaaa" value="BirthYear">
-	    <input type="hidden" name="mm" value="BirthMonth">
-	    <input type="hidden" name="gg" value="BirthDay">
-
-	    <input type="hidden" name="operatore" value="OperatorMobile">
-	    <input type="hidden" name="cellulare" value="Phone">
-
-	    <input type="hidden" name="via" value="TypeVia">
-	    <input type="hidden" name="indirizzo" value="address">
-	    <input type="hidden" name="civico" value="NumberAddress">
-        </form>
+	<form action="#" method="post" id="formu" name="formu">
+		<input type="hidden" name="inputEmail" id="inputEmail" value="">
+		<input type="hidden" name="inputNom" id="inputNom" value="">
+		<input type="hidden" name="inputPrenom" id="inputPrenom" value="">
+	    <input type="hidden" name="inputSex" id="inputSex" value="0">
+	    <input type="hidden" name="inputZipCode" id="inputZipCode" value="">
+	    <input type="hidden" name="inputCity" id="inputCity" value="">
+	    <input type="hidden" name="inputYearBirth" id="inputYearBirth" value="">
+	    <input type="hidden" name="inputMonthBirth" id="inputMonthBirth" value="">
+	    <input type="hidden" name="inputDayBirth" id="inputDayBirth" value="">
+	    <input type="hidden" name="inputPhone" id="inputPhone" value="">
+	    <input type="hidden" name="inputAddress" id="inputAddress" value="">
+	    <!--<button type="submit" class="submit" id="submit" style="position: absolute"/></button>-->
+    </form>
+    <?php
+    	if(isset($_POST))
+		{
+			print_r($_POST);		
+		}
+		if (!empty($_POST))
+		{
+			echo "nothing";
+		} 
+    ?>
 	<form name="INTEGRATION_Styles">
 	<input type="hidden" name="100%" value="TableWidth"> <!--Tamano de las tablas-->
 	<input type="hidden" name="0" value="TableCellpadding"> <!--Tamano del Cellpadding-->
