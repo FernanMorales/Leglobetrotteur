@@ -39,6 +39,10 @@
 	<input type="hidden" name="1" value="ItemperRow">
 	</form>
 
+	<form action="test.html" name="background" id="background" method="get">
+	<input type="hidden" id="back" name="back" value="London">
+	</form>
+
 	<form name="INTEGRATION_Categories">
 	<input type="hidden" name="0" value="ItemperRow">
 	</form>
@@ -46,7 +50,7 @@
 		<input type="hidden" name="inputEmail" id="inputEmail" value="">
 		<input type="hidden" name="inputNom" id="inputNom" value="">
 		<input type="hidden" name="inputPrenom" id="inputPrenom" value="">
-	    <input type="hidden" name="inputSex" id="inputSex" value="0">
+	    <input type="hidden" name="inputSex" id="inputSex" value="">
 	    <input type="hidden" name="inputZipCode" id="inputZipCode" value="">
 	    <input type="hidden" name="inputCity" id="inputCity" value="">
 	    <input type="hidden" name="inputYearBirth" id="inputYearBirth" value="">
@@ -56,16 +60,6 @@
 	    <input type="hidden" name="inputAddress" id="inputAddress" value="">
 	    <!--<button type="submit" class="submit" id="submit" style="position: absolute"/></button>-->
     </form>
-    <?php
-    	if(isset($_POST))
-		{
-			print_r($_POST);		
-		}
-		if (!empty($_POST))
-		{
-			echo "nothing";
-		} 
-    ?>
 	<form name="INTEGRATION_Styles">
 	<input type="hidden" name="100%" value="TableWidth"> <!--Tamano de las tablas-->
 	<input type="hidden" name="0" value="TableCellpadding"> <!--Tamano del Cellpadding-->
@@ -139,8 +133,6 @@
 					<input type="text" name="nome" id="nome" placeholder="Prénom *" class="icon_a">
 					<input type="text" name="cognome" id="cognome" placeholder="Nom *" class="icon_a">
 					<input type="text" name="email" id="email" placeholder="Email *" class="icon_b">
-					<label class="nb">* champs obligatoires</label>
-					<div class="clear"></div>
 				</div>
 				<div class="bottom">
 					<div class="privacy_button">
