@@ -1,8 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta http-equiv="Cache-control" content="public">	
+
+	<title>Participez pour gagner un voyage avec Le Globetrotteur</title>
+
+	<link href="css/style.css" rel="stylesheet" media="all">
+	<link href="css/css.css" rel="stylesheet" media="all">
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery-csv.js"></script>
+        <script src="js/script.js"></script>
+	<script src="js/jquery.selectbox-0.2.min.js"></script>	
+	<script language="javascript" src="http://registro.correodirect.com/getcode.php?web_id=16149" id="cdcrjs"></script>
+	<link href="css/jquery.selectbox.min.css" rel="stylesheet" media="all">
+	<link href='http://fonts.googleapis.com/css?family=Roboto:100,300' rel='stylesheet' type='text/css'>	
+
 </head>
+
 <body>
+
 <script type="text/javascript">
 
 	var parts = window.location.search.substr(1).split("&");
@@ -14,5 +32,95 @@
 	}
 	alert($_GET['back']); // 1
 </script>
+
+	<div id="logo"  class="superior"></div>
+	
+	<div id="central_title" class="superior" style="display: none;"></div>
+	<div id="right_title" class="superior"></div>
+	
+	<div id="mykonos" class="menu" style="background-position: 0px 0px; cursor: default; width: 100%; background-size: 100% auto;">
+		<div id="form" style="display: block;"> 
+			<div class="box1">
+				<div>
+					<img src="http://127.0.0.1:3000/concorso_turista_curioso/parti_messico.png"></img>
+				</div>
+				<div>
+					<p class="left" onclick="change_dest('left')"></p>
+					CHANGER DE DESTINATION
+					<p class="right" onclick="change_dest('right')"></p>
+				</div>
+				“Le véritable voyage de découverte ne consiste pas à chercher de nouveaux paysages, mais à avoir de nouveaux yeux.” 
+				<span class="autore">(Marcel Proust)</span>
+				<div class="clear spacer"></div>
+				“Le voyageur, ce sage, apprend à ne pas répéter les succès mais à en trouver d’autres dans de nouveaux lieux.” 
+				<span class="autore">(Paul Fussell)</span>
+				<div class="clear spacer"></div>' 
+				</div>
+			</div>
+			<div class="box2">
+				ETAPE <span>3</span>
+				<div id="passo"></div>
+				<div id="adsense">
+					<iframe src="addsense/passo4_mob.html">
+					</iframe>
+                </div>
+			</div>
+                        
+			<div class="box3">
+				<div class="top">
+					
+				</div>
+				<div class="bottom">
+					<div class="clear"></div>
+					<div id="step">
+						<img src="http://127.0.0.1:3000/concorso_turista_curioso/ajax-loader.gif" id="loader_gif" alt="caricamento, attendi qualche secondo" title="caricamento, attendi qualche secondo" />
+						ETAPE SUIVANTE
+					</div>
+				</div>
+			</div>	
+		</div>
+		<input type="hidden" id="position" value="a">
+		<input type="hidden" id="selection" value="">
+		<input type="hidden" id="ref" value="<?php echo REF; ?>">
+		<input type="hidden" id="mail_temp">
+		<input type="hidden" id="nome_temp">
+		<input type="hidden" id="cognome_temp">
+		<input type="hidden" id="sesso_fb">
+		<input type="hidden" id="datanascita_fb">
+		
+
+	
+		
+
+
+
+		<div class="overlay">
+
+	</div><div class="select"></div></div>
+	
+	<form id="contact-form" name="regform">
+	
+		
+	</form>
+	
+	<div id="footer">
+		<div id="copy"> 
+			Copyright &copy; 2006-2014 Antevenio Publicité tous droits réservés. Une réalisation de Antevenio Publicité 32 rue de Londres – 75009 Paris – RCS Paris B 508 671 682
+		</div>
+		<div id="facebook" onclick="condividiHome()">
+			Partager sur Facebook
+		</div>
+	</div>
+	
+	<!-- FACEBOOK API ELEMENT -->
+	<div id="fb-root"></div> 
+	
+	
+	<div id="adsense_mobile_fisso">
+		<iframe src='addsense/passo_fine_footer_mob.html' frameborder='0'></iframe>
+	</div>	
+	
+	
+
 </body>
 </html>
